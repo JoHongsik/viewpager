@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/three_textview"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/back"
+                android:hint="Memo"
+                android:inputType="none"
+                android:padding="5dp"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/three_editText"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/three_textview"
+                android:layout_alignStart="@+id/three_textview"
+                android:layout_below="@+id/three_textview"
+                android:layout_marginTop="29dp"
+                android:ems="10"
+                android:hint="content"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/three_btn"
+                style="@style/btnStyleopal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/three_editText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:onClick="onClickSave"
+                android:text="Save changes"
+                android:textSize="20dp" />
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+</RelativeLayout>
